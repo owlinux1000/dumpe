@@ -1,0 +1,12 @@
+# .goreleaser.yml
+# Build customization
+builds:
+  - main: dumpe.go
+    binary: dumpe
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - i686
